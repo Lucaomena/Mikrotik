@@ -1,0 +1,36 @@
+OBS: Modelo OSI (Sistema Aberto de interconexão) 
+7 - APLICAÇÃO:  ;
+6 - APRESENTAÇÃO: ;
+5 - SESSÃO: ;
+4 - TRANSPORTE: ;
+3 - REDES: Endereçamento dos dispositivos;
+2 - ENLACE: Link de dados(Correção da camada mais baixa, control de fluxo entre dispositivos;
+1 - FISÍCA: Processo fisíco(Cabo, impedancia e etc);
+
+EX: Encapsulamento de informações e desencapsulamento.
+  SDU - Service Data Unity
+  PCI - Protocol Control Information
+  PDU - Process Data Unity
+          A ________________________ 
+    PCI   PCI + SDU = PDU
+          B ________________________
+    SDU       PCI + SDU = PDU
+          C ________________________
+    PDU                    SDU  
+          D ________________________
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Modelo Internet 
+                          OSI   
+                            7   |  4 APLICAÇÃO    | HTTP,FTP
+                            6   |  4 APLICAÇÃO    | TLS
+                            5   |  4 APLICAÇÃO    | SIP, NETBIOS
+                            4   |  3 TRANSPORTE   | TCP/UDP
+                            3   |  2 INTERNET     | IP,ICMP, NAT, ARP
+                            2   |  1 REDE         | ETHERNET, WIFI
+                            1   |  1 REDE         |
+Configuration:
+  Mode:
+    - Router(Roteador): No modo Roteador, os pacotes são encaminhados na Camada 3 usando endereços IP e rotas IP (atua como um roteador).
+    - Bridge():O modo Bridge adiciona todas as interfaces à ponte, permitindo encaminhar pacotes da Camada 2 (atua como um hub/switch).
