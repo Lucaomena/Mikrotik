@@ -8,9 +8,9 @@ OBS: Modelo OSI (Sistema Aberto de interconexão)
 1 - FISÍCA: Processo fisíco(Cabo, impedancia e etc);
 
 EX: Encapsulamento de informações e desencapsulamento.
-  SDU - Service Data Unity
-  PCI - Protocol Control Information
-  PDU - Process Data Unity
+  SDU - Service Data Unity            | Unidade de dados de serviço
+  PCI - Protocol Control Information  | Informações de controle de protocolo
+  PDU - Process Data Unity            | Unidade de dados de processo
           A ________________________ 
     PCI   PCI + SDU = PDU
           B ________________________
@@ -30,6 +30,16 @@ Modelo Internet
                             3   |  2 INTERNET     | IP,ICMP, NAT, ARP
                             2   |  1 REDE         | ETHERNET, WIFI
                             1   |  1 REDE         |
+
+
+                            Layer in Architecture                                       Data Unit 
+                             _____________________                                       ____________
+                            |Application Layer    |                                     |            | Application Data Unit 
+                            |Presentation Layer   | Presentation Service Header  ------>||           | Presentation Protocol Data Unit  
+                            |Session Layer        | Session Service Header       ----->||            | Session Protocol Data Unit 
+                            |Transort Layer       | Transport Service Header     ---->||             | Transport Protocol Data Unit 
+                            
+ 
 Configuration:
   Mode:
     - Router(Roteador): No modo Roteador, os pacotes são encaminhados na Camada 3 usando endereços IP e rotas IP (atua como um roteador).
