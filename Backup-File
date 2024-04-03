@@ -1,0 +1,2 @@
+1 - This command has the function of exporting mikrotik settings:
+  export file=bkp_full
