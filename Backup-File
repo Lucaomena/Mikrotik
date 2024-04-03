@@ -1,2 +1,7 @@
 1 - This command has the function of exporting mikrotik settings:
   export file=bkp_full
+
+2 - running the backup script:
+  System - Scripts - New
+    Inserir nome no campo nome e aplicar 
+      Command: export file="nome do arquivo de backup"
